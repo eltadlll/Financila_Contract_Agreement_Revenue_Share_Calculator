@@ -41,9 +41,17 @@ st.title("Advanced Investment Intelligence System")
 
 # Define default values for inputs
 defaults = {
-    "P0": 80000, "D": 4, "E": 20000, "Tx": 15, "Si": 30,
-    "t": 24, "M": 1.4, "Bank": 300000, "BankRate": 12
+    "P0": 80000.0,  # Added .0 to make it a float
+    "D": 4.0, 
+    "E": 20000.0, 
+    "Tx": 15.0, 
+    "Si": 30.0,
+    "t": 24,        # Kept as int for "Time (months)"
+    "M": 1.4, 
+    "Bank": 300000.0, 
+    "BankRate": 12.0
 }
+
 
 # Use Streamlit columns for a better layout
 col1, col2 = st.columns(2)
